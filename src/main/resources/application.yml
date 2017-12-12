@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    staging:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:13306/demo?characterEncoding=UTF8
+      username: demo
+      password: demo
+    production:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:23306/demo?characterEncoding=UTF8
+      username: demo
+      password: demo
+mybatis:
+  configuration:
+    useColumnLabel: true
+    mapUnderscoreToCamelCase: true
+  mapper-locations: mybatis/sql/*.xml
+  check-config-location: false
