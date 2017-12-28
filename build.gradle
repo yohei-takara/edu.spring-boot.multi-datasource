@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-apply plubin: 'groovy'
+apply plugin: 'groovy'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
