@@ -5,7 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+    <!--Tyhmeleaf 例-->
     <h1 th:utext="${message}"></h1>
     <h1 th:utext="${count}"></h1>
+    <span th:utext="${name}"></span>
+    <span th:utext="${age}"></span>
+    <span th:if="${sex}">男</span>
+    <span th:unless="${sex}">女</span>
+
+    <br/>
+
+    <!-- Tyhmeleaf foreach 例 -->
+    <table>
+        <tr th:each="human : ${humans}">
+            <td th:text="${human.nameName}"></td>
+            <td th:text="${human.ageAge}"></td>
+            <td >
+                <span th:if="${human.sex}">男</span>
+                <span th:unless="${human.sex}">女</span>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
