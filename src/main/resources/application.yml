@@ -10,6 +10,8 @@ spring:
       url: jdbc:mysql://127.0.0.1:23306/demo?characterEncoding=UTF8
       username: demo
       password: demo
+  thymeleaf:
+    cache: false
 mybatis:
   configuration:
     useColumnLabel: true
