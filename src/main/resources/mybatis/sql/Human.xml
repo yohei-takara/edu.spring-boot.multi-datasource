@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.synchronizer.repository.HumanRepository">
+
+    <resultMap id="customMapping" type="com.example.synchronizer.model.HumanModel">
+        <result property="nameName" column="name"></result>
+        <result property="ageAge" column="age"></result>
+        <result property="sex" column="sex"></result>
+    </resultMap>
+
+
     <select id="count" resultType="int">
         SELECT COUNT(*) FROM human
+    </select>
+
+    <select id="fetchById" resultMap="customMapping" >
+        SELECT * FROM human WHERE id = #{id}
+    </select>
+
+    <select id="fetchAll" resultMap="customMapping">
+        SELECT * FROM human
     </select>
 </mapper>

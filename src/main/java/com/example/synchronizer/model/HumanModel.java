@@ -2,24 +2,24 @@ package com.example.synchronizer.model;
 
 public class HumanModel {
 
-    private String name;
-    private int age;
+    private String nameName;
+    private int ageAge;
     private boolean sex;
 
-    public String getName() {
-        return name;
+    public String getNameName() {
+        return nameName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameName(String nameName) {
+        this.nameName = nameName;
     }
 
-    public int getAge() {
-        return age;
+    public int getAgeAge() {
+        return ageAge;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAgeAge(int ageAge) {
+        this.ageAge = ageAge;
     }
 
     public boolean isSex() {
