@@ -2,14 +2,14 @@ spring:
   datasource:
     staging:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:13306/demo?characterEncoding=UTF8
-      username: demo
-      password: demo
+      url: jdbc:mysql://127.0.0.1:33306/multi_datasource?characterEncoding=UTF8
+      username: multi
+      password: multi
     production:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:23306/demo?characterEncoding=UTF8
-      username: demo
-      password: demo
+      url: jdbc:mysql://127.0.0.1:43306/multi_datasource?characterEncoding=UTF8
+      username: multi
+      password: multi
   thymeleaf:
     cache: false
 mybatis:
