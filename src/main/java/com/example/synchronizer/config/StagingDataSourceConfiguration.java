@@ -16,7 +16,7 @@ public class StagingDataSourceConfiguration {
     private String username;
     private String password;
 
-    public DataSource getSha1DataSource() {
+    public DataSource getDataSource() {
         return DataSourceBuilder
                 .create()
                 .driverClassName(getDriverClassName())
